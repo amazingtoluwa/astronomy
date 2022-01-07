@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ASTRONOMY| GALLERY</title>
+    <meta charset="utf-8">
+
+    <script src="css/5grid/jquery.js"></script>
+    <script src="css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var currentImg = 1;
+        document.getElementById("prevLink").addEventListener("click", prevLink);
+        document.getElementById("nextLink").addEventListener("click", nextLink);
+
+        function loadImage()
+
+        {
+            imgNum = this.id;
+            document.getElementById("rockOfDunamase").src =
+                "images/rockOfDunamase0" + imgNum + ".jpg";
+            currentImg = imgNum;
+        }
+
+
+        function nextLink() {
+            if (currentImg == 5) {
+                document.getElementById("rockOfDunamase").src =
+                    "images/rockOfDunamase01.jpg";
+                currentImg = 1;
+            } else {
+                currentImg++;
+                document.getElementById("rockOfDunamase").src =
+                    "images/rockOfDunamase0" + currentImg + ".jpg";
+            }
+
+        }
+
+        function prevLink() {
+            if (currentImg == 1) {
+                document.getElementById("rockOfDunamase").src =
+                    "images/rockOfDunamase05.jpg";
+                currentImg = 5;
+            } else {
+                currentImg--;
+                document.getElementById("rockOfDunamase").src =
+                    "images/rockOfDunamase0" + currentImg + ".jpg";
+            }
+        }
+    </script>
+
+    <div id="header-wrapper">
+        <header id="header">
+            <div class="5grid-layout">
+                <div class="row">
+                    <div class="12u" id="logo">
+                        <h1><a href="#" class="mobileUI-site-name">ASTRONOMY</a></h1>
+                        <p>GALLERY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="5grid-layout">
+                <div class="row">
+                    <div class="12u" id="menu">
+                        <nav class="mobileUI-site-nav">
+                            <ul>
+                                <li class="current_page_item"><a href="index.html">HOMEPAGE</a></li>
+                                <li><a href="threecolumn.html">MAGAZINE </a></li>
+                                <li><a href="twocolumn1.html">History </a></li>
+                                <li><a href="twocolumn2.html">CLASSES </a></li>
+                                <li><a href="onecolumn.html">FUN </a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                                <li><a href="style.html">STYLE PAGE</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <p>.</p>
+    <p> <img src="images/thumbnails/pic1-sm.gif" alt=" " id="thumb1" width="550" height="550"> </p>
+    <br>
+
+
+    <img src="images/thumbnails/pic1-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic1.gif';" onMouseOut="document.getElementById('thumb1').src='images/thumbnails/pic1-sm.gif';">
+
+    <img src="images/thumbnails/pic2-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic2.gif';" onMouseOut="document.getElementById('thumb2').src='images/thumbnails/pic2-sm.gif';">
+
+    <img src="images/thumbnails/pic3-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic3.gif';" onMouseOut="document.getElementById('thumb3').src='images/thumbnails/pic3-sm.gif';">
+
+    <img src="images/thumbnails/pic4-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic4.gif';" onMouseOut="document.getElementById('thumb1').src='images/thumbnails/pic4-sm.gif';">
+
+    <img src="images/thumbnails/pic5-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic5.gif';" onMouseOut="document.getElementById('thumb1').src='images/thumbnails/pic5-sm.gif';">
+
+    <img src="images/thumbnails/pic6-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic6.gif';" onMouseOut="document.getElementById('thumb1').src='images/thumbnails/pic6-sm.gif';">
+
+    <img src="images/thumbnails/pic7-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic7.gif';" onMouseOut="document.getElementById('thumb1').src='images/thumbnails/pic7-sm.gif';">
+
+    <img src="images/thumbnails/pic8-sm.gif" alt=" " id="thumb1" onMouseOver="document.getElementById('thumb1').src='images/pic8.gif';" onMouseOut="document.getElementById('thumb1').src='images/thumbnails/pic8-sm.gif';">
+
+
+
+
+
+    <!-- <p>
+        <a href="#" id="prevlink">previous image</a>
+        <a href="#" id="nextlink">next image</a>
+    </p> -->
+    <P>.</P>
+    <P>.</P>
+    <div id="footer-wrapper">
+        <div class="5grid-layout">
+            <div class="row" id="footer-content">
+                <div class="3u" id="box1">
+                    <section>
+                        <h2>Astronomy Ireland</h2>
+                        <p>
+                            <a href="#"><img src="images/pics02.jpg" alt=""></a>
+                        </p>
+                        <p>.</p>
+                        <p>As the national astronomy society in Ireland with 3,000 active members and an even bigger public following we receive a lot of requests for information like this so we are very keen to provide a listing of every course in Ireland
+                            and you can help us by keeping us up to date.</p>
+                    </section>
+                </div>
+                <div class="3u" id="box2">
+                    <section>
+                        <h2>Postal Address</h2>
+                        <ul class="style6">
+                            <li class="first">
+                                <h3>Astronomy Ireland</h3>
+                                <p><a href="#">FREEPOST
+                            P.O. Box 2888
+                            Dublin 5
+                            
+                            .</a></p>
+                            </li>
+                            <li>
+                                <h3>Phone</h3>
+                                <p><a href="#">( 01-8901111 is no longer in use, please use mobile below ).</a></p>
+                            </li>
+                            <li>
+                                <h3>Mobile AND E-MAIL</h3>
+                                <p><a href="#">086 06 46 555 AND admin@astronomy.ie.</a></p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="3u" id="box4">
+                    <section>
+                        <h2>Our Address</h2>
+                        <p><strong>AUnit B1
+                    Centrepoint Business Park
+                     </strong></p>
+                        <p>;</p>
+                        <p>Unit B1 Centrepoint Business Park Ballycoolin Dublin D11RR62 IE6413749Q. </p>
+                        <p>.</p>
+                        <p>(If 'change of address' please give your old address and new address as well as your new landline number, and ALSO any mobile number).</p>
+                    </section>
+                </div>
+                <div class="3u" id="box3">
+                    <section>
+                        <h2>Contact Information</h2>
+                        <p><strong>Phone</strong>: +35356356355</p>
+                        <p><strong>Email</strong>:admin@astronomy.ie</p>
+                        <p>.</p>
+                        <p><strong>Astronmy Ireland</strong></p>
+                        <p>3rd connel street limerick </p>
+                        <p>limerick Ireland.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>
